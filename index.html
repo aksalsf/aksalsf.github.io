@@ -1,78 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Programmer cupu yang nyambi jadi organisatoris!">
-    <meta name="keywords" content="Aksal Syah Falah, Surakarta, UNS, Front End Web Developer">
-    <meta name="author" content="aksalsf">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Optional JavaScript -->
-    <script type="text/javascript" src="js/all.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.4.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <title>Aksal SF &#128900; Your little buddy!</title>
-    <link rel="shortcut icon" href="img/favicon.svg">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="keywords"
+      content="Aksal Syah Falah, Surakarta, UNS, Front End Web Developer"
+    />
+    <meta name="author" content="aksalsf" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aksal SF &#128900; Mahasiswa Informatika;</title>
   </head>
-  <body>
-    <!-- <nav class="nav">
-      <div class="nav__brand">
-        <a href="#">aksal<span>sf</span></a>
-      </div>
-      <ul class="nav__list">
-        <li>
-          <a href="#">About Me</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-      </ul>
-    </nav> -->
-    <section class="hero">
-      <header class="hero__heading">
-        <small>Hello, I am</small>
-        <h1>
-          AKSAL <span>SF</span>
-        </h1>
-        <p>A simple boy like Semicolon who love to solve your problems using <span class="color-blue">beautiful</span> design, word, and code.</p>
-        <aside class="hero__social">
-          <p>I'll be pleased to meet you on:</p>
-          <div class="hero__social-group">
-            <a href="https://web.facebook.com/aksalsf" target="_blank" title="Find me on Facebook">
-              <i class="fab fa-facebook fa-2x"></i>
+  <body
+    class="bg-dark min-vh-100 d-flex justify-content-center align-items-center"
+  >
+    <main class="col-8 col-lg-6 col-xl-4 mx-auto">
+      <h1 class="text-light lh-lg mb-5 text-primary">
+        Hello, <br class="d-block d-sm-none" /><span id="myName"></span>
+      </h1>
+      <section class="mb-5">
+        <h6 class="text-white">My Skills : [</h6>
+        <p id="mySkills" class="mb-0 ps-4"></p>
+        <span>];</span>
+      </section>
+      <section>
+        <h6 class="text-white">Visit my portfolio :</h6>
+        <ul>
+          <li>
+            <a
+              href="https://gmillennial.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-decoration-none text-body"
+              title="Global Millennial Group"
+            >
+              Global Millennial Group
             </a>
-            <a href="https://www.instagram.com/aksal.sf" target="_blank" title="Find me on Instagram">
-              <i class="fab fa-instagram fa-2x"></i>
+          </li>
+          <li>
+            <a
+              href="https://sdgsummit.id/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-decoration-none text-body"
+              title="Indonesia SDGs Summit"
+            >
+              Indonesia SDGs Summit
             </a>
-            <a href="https://t.me/aksalsf" target="_blank" title="Find me on Telegram">
-              <i class="fab fa-telegram fa-2x"></i>
+          </li>
+          <li>
+            <a
+              href="http://join.gmillennial.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-decoration-none text-body"
+              title="Indonesia SDGs Summit"
+            >
+              Join GMG
             </a>
-            <a href="https://github.com/aksalsf/" target="_blank" title="Find me on GitHub">
-              <i class="fab fa-github fa-2x"></i>
+          </li>
+          <li>
+            <a
+              href="http://scholarship.gmillennial.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-decoration-none text-body"
+              title="Global Millennial Group Scholarship"
+            >
+              Global Millennial Group Scholarship
             </a>
-          </div>
-          <!-- <div class="hero__social-button">
-            <a href="mailto:aksal.sf@gmail.com" title="Let's Collaborate for a project together!">Let's Collaborate!</a>
-            <a href="#" title="Look my portfolio!">Portfolio</a>
-          </div> -->
-        </aside>
-      </header>
-      <figure class="hero__image">
-        <img src="img/me.png" alt="Aksal Syah Falah">
-      </figure>
-    </section>
+          </li>
+          <li>
+            <a
+              href="http://bemuns.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-decoration-none text-body"
+              title="BEM UNS"
+            >
+              BEM UNS
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
     <script>
-      $(window).on("scroll", function() {
-          if($(window).scrollTop() > 50) {
-              $(".nav").addClass("nav-scrolled");
-          } else {
-              //remove the background property so it comes transparent again (defined in your css)
-             $(".nav").removeClass("nav-scrolled");
-          }
-      });
+      new TypeIt("#myName").type("I am ").pause(1000).type("Aksal;").go();
+      new TypeIt("#mySkills")
+        .pause(2500)
+        .type("HTML, ")
+        .pause(500)
+        .type("CSS, SASS, Bootstrap")
+        .pause(300)
+        .type(", PHP, CodeIgniter, Laravel, ")
+        .pause(300)
+        .type("Wordpress")
+        .go();
     </script>
   </body>
 </html>
